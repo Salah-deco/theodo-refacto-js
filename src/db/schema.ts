@@ -13,6 +13,8 @@ export const products = sqliteTable('products', {
 	expiryDate: integer('expiry_date', {mode: 'timestamp_ms'}),
 	seasonStartDate: integer('season_start_date', {mode: 'timestamp_ms'}),
 	seasonEndDate: integer('season_end_date', {mode: 'timestamp_ms'}),
+	flashStartDate: integer('flash_start_date', {mode: 'timestamp_ms'}),
+	flashEndDate: integer('flash_end_date', {mode: 'timestamp_ms'}),
 });
 
 export type Product = typeof products.$inferSelect;
